@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextView untuk menampilkan judul -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang di Aplikasi Quiz"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- RadioGroup untuk pilihan makanan -->
+    <TextView
+        android:id="@+id/textViewFoodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Makanan:"
+        android:textSize="20sp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="30dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFoodTitle"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonNasiGoreng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nasi Goreng" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMieGoreng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mie Goreng" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMieRebus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mie Rebus" />
+
+    </RadioGroup>
+
+    <!-- RadioGroup untuk pilihan minuman -->
+    <TextView
+        android:id="@+id/textViewDrinkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Minuman:"
+        android:textSize="20sp"
+        android:layout_below="@id/radioGroupFood"
+        android:layout_marginTop="30dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDrinkTitle"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonTehEs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teh Es" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEsJeruk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Es Jeruk" />
+
+    </RadioGroup>
+
+    <!-- EditText untuk jumlah porsi -->
+    <EditText
+        android:id="@+id/editTextJumlahPorsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Porsi"
+        android:inputType="number"
+        android:layout_below="@id/radioGroupDrink"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Button untuk menghitung total -->
+    <Button
+        android:id="@+id/buttonHitungTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung Total"
+        android:layout_below="@id/editTextJumlahPorsi"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

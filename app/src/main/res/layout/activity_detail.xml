@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <!-- TextView untuk menampilkan nama minuman -->
+    <TextView
+        android:id="@+id/textViewNamaMinuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Minuman:"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- TextView untuk menampilkan jumlah porsi -->
+    <TextView
+        android:id="@+id/textViewJumlahPorsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Porsi:"
+        android:textSize="20sp"
+        android:layout_below="@id/textViewNamaMinuman"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- TextView untuk menampilkan total harga -->
+    <TextView
+        android:id="@+id/textViewTotalHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Harga:"
+        android:textSize="20sp"
+        android:layout_below="@id/textViewJumlahPorsi"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
